@@ -1,0 +1,15 @@
+{% extends "flatpages/base.html" %}
+{% block title %}{{ flatpage.title }}{% endblock title %}
+
+{% block header %}{{ flatpage.title }}{% endblock header %}
+
+{% block nav %}
+<a class="list-group-item list-group-item-action list-group-item-light p-3" href="/greeting/">Greeting</a>
+<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Content</a>
+<a class="list-group-item list-group-item-action list-group-item-light p-3" href="/contact/">Contact Us</a>
+{% endblock nav %}
+
+{% block content %}
+  <p>{{flatpage.content }}
+  <p>{{flatpage.content }}
+{% endblock content %}
